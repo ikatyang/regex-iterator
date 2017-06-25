@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return correctly with global regex 1`] = `
+Array [
+  Array [
+    "123",
+  ],
+  Array [
+    "456",
+  ],
+  Array [
+    "789",
+  ],
+]
+`;
+
+exports[`should return correctly without global regex 1`] = `
+Array [
+  Array [
+    "123",
+  ],
+]
+`;

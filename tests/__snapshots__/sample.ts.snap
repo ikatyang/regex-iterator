@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should spread correctly 1`] = `
+Array [
+  Array [
+    "1a",
+    "1",
+    "a",
+  ],
+  Array [
+    "2b",
+    "2",
+    "b",
+  ],
+  Array [
+    "3c",
+    "3",
+    "c",
+  ],
+]
+`;
+
+exports[`should take correctly 1`] = `
+Array [
+  "1-a",
+  "2-b",
+]
+`;
