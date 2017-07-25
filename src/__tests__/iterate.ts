@@ -1,6 +1,6 @@
-import {create} from '../create';
-import {TakeAction} from '../enums';
-import {iterate} from '../iterate';
+import { create } from '../create';
+import { TakeAction } from '../enums';
+import { iterate } from '../iterate';
 
 const test_return_value = (return_value: any, expected_count: number) => {
   let counter = 0;

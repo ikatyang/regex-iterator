@@ -1,19 +1,17 @@
-import {TakeAction} from './enums';
+import { TakeAction } from './enums';
 
 /**
  * iterate the generator
  */
 export const iterate = <T>(
-    iterator: IterableIterator<T>,
-    fn: (value: T, index: number) => void | boolean | TakeAction,
-    ) => {
-
+  iterator: IterableIterator<T>,
+  fn: (value: T, index: number) => void | boolean | TakeAction,
+) => {
   let counter = 0;
   let is_continue = true;
   let result = iterator.next();
 
   while (is_continue && !result.done) {
-
     const action = fn(result.value, counter++);
 
     switch (action) {
