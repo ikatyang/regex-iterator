@@ -1,6 +1,6 @@
-import {create} from '../create';
-import {TakeAction} from '../enums';
-import {take} from '../take';
+import { create } from '../create';
+import { TakeAction } from '../enums';
+import { take } from '../take';
 
 const test_return_value = (return_value: any, expected_count: number) => {
   const iterator = create(/[0-9]+/g, '123 456 789');
@@ -21,6 +21,10 @@ it('should take correctly', () => {
 
 it('should take transformed correctly', () => {
   const iterator = create(/[0-9]+/g, '123 456 789');
-  const values = take(iterator, () => true, (value, index) => `${index}:${value[0]}`);
+  const values = take(
+    iterator,
+    () => true,
+    (value, index) => `${index}:${value[0]}`,
+  );
   expect(values).toMatchSnapshot();
 });
