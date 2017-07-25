@@ -4,6 +4,7 @@
     "lib": ["es6"],
     "module": "commonjs",
     "declaration": true,
+    "importHelpers": true,
     "downlevelIteration": true
   },
   "include": ["src/**/*.ts", "tests/**/*.ts"]

@@ -26,6 +26,9 @@
     "prebuild": "rm -rf ./lib",
     "build": "tsc -p tsconfig.build.json"
   },
+  "dependencies": {
+    "tslib": "^1.7.1"
+  },
   "devDependencies": {
     "@types/jest": "20.0.2",
     "codecov": "2.2.0",
