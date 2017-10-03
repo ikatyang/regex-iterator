@@ -30,7 +30,7 @@
     "tslib": "^1.7.1"
   },
   "devDependencies": {
-    "@types/jest": "21.1.1",
+    "@types/jest": "21.1.2",
     "jest": "21.2.1",
     "prettier": "1.7.4",
     "prettier-config-ikatyang": "1.1.1",
